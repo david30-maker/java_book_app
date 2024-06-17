@@ -61,5 +61,22 @@ public class Library {
         }
     }
 
+    public void searchBooksByAuthor() {
+        List<Book> results = new ArrayList<>();
+        for (Book book : books) {
+            if (book.getAuthor().toLowerCase().contains(author.toLowerCase())) {
+                results.add(book);
+            }
+        }
+        if (results.isEmpty()) {
+            System.out.println("No book by author containing: " + author);
+        }else{
+            System.out.println("Books found by containing'" + author + "':");
+            for (Book book : results) {
+                System.out.println(book);
+            }
+        }
+    }
+
     
 }
