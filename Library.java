@@ -78,5 +78,16 @@ public class Library {
         }
     }
 
-    
+    public void sortBooksByTitle() {
+        Collections.sort(books, (b1, b2) -> b1.getTitle().compareToIgnoreCase(b2.getTitle()));
+        System.out.println("Books sorted by title:");
+        printBooks();
+    }
+
+    public void sortBooksByDatePublished() {
+        Collections.sort(books, (b1, b2) -> b1.getDatepublished().compareTo(b2.getDatepublished()));
+        System.out.println("Book sorted by date published:");
+        printBooks();
+
+    }
 }
