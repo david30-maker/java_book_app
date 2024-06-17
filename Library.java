@@ -52,12 +52,14 @@ public class Library {
             }
         }
         if (results.isEmpty()) {
-            System.out.println("No books found with title containing: " + author);
+            System.out.println("No books found with title containing: " + title);
         }else{
-            System.out.println("Books found by author containing: '" author "':");
+            System.out.println("Books found by author containing: '" title "':");
             for (Book book : results) {
                 System.out.println(book);
             }
         }
     }
+
+    
 }
