@@ -27,7 +27,21 @@ public class Library {
                 iterator.remove();
                 System.out.println("Book removed:" + book.getTitle());
                 saveBooks();
+                return;
+            }
+        }
+        System.out.println("Book not found: " + title);
+    }
+
+    public void printBooks() {
+        if (books.isEmpty()){
+            System.out.println("The library is empty");
+        }else{
+            System.out.println("Books in the library");
+            for (Book book : books) {
+                System.out.println(book);
             }
         }
     }
+
 }
