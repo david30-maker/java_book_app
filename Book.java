@@ -1,4 +1,4 @@
-public class  Book {
+public class Book {
     private String title;
     private String author;
     private String datePublished;
@@ -9,7 +9,7 @@ public class  Book {
         this.datePublished = datePublished;
     }
 
-    public String geTitle() {
+    public String getTitle() {
         return title;
     }
 
@@ -23,7 +23,6 @@ public class  Book {
 
     @Override
     public String toString() {
-        return "Title: " + title + ", Author: " + author +
-        ", Published: " + datePublished;
+        return "Title: " + title + ", Author: " + author + ", Published: " + datePublished;
     }
 }
